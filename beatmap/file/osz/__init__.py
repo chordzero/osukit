@@ -1,4 +1,4 @@
-from ..osu import *
+from beatmap.file.osu import *
 import zipfile
 
 class OszFile:
@@ -16,6 +16,3 @@ class OszFile:
                 osu = OsuFile()
                 osu.parse_str(content)
                 self.beatmaps.append(osu)
-                
-
-        print(self.beatmaps)
